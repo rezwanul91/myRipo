@@ -27,6 +27,7 @@ public class CustomerLoginFunctionality extends Base {
     @Then("I click on Customer Login Menu")
     public void i_click_on_customer_login_menu() {
         click(EmployeeLoginPage.menuCustomerLogin );
+        System.out.println("EmployeeLoginPage");
     }
     @Then("I Enter User Id")
     public void i_enter_user_id() {
