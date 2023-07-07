@@ -40,11 +40,13 @@ public class CustomerLoginFunctionality extends Base {
     @When("I click on Login button")
     public void i_click_on_login_button() {
         click( CustomerLoginPage.btnCustomerLogin );
+        System.out.println("click login page");
     }
     @Then("Verify I am in Customer Home Page")
     public void verify_i_am_in_customer_home_page() {
         String welcomeMsg = getText( CustomerHomePage.labelWelcomeMsg );
         assertEquals( "Welcome David", welcomeMsg);
+        System.out.println("verification done");
         System.out.println("verification done");
     }
 
